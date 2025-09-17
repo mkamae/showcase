@@ -1,0 +1,82 @@
+---
+title: Air translate
+description: Live translation using WebSockets, inspired by the new feature of Apple AirPods Pro 3, which doesn’t require special hardware—just your web app.
+authorIds:
+  - Cristian Yosafat Hernández Ruiz # Must match your author file name (without .yml)
+categories:
+  - text-to-speech, speech-to-text, voices # Choose from: agents, text-to-speech, speech-to-text, music, voices
+isFeatured: false # Leave as false, we'll feature exceptional projects
+date: "2025-09-16" # Today's date in YYYY-MM-DD format
+image: /images/air-translate.png # Upload image to /public/images/
+demoUrl: https://air-translate-c7uoadpid-cristian-yosafat-hernandez-ruiz.vercel.app # Optional: Live demo
+repoUrl: https://github.com/BlakePro/air-translate-app # Optional: Repository
+videoUrl: "" # Optional: Demo video
+xUrl: "" # Optional: X/Twitter post
+---
+
+# Your Project Name
+Air translate
+
+## Overview
+With Air Translate, powered by ElevenLabs, you can listen to people speaking in different languages and instantly hear real-time translations similar like AirPods Pro 3. The platform captures speech, transcribes it, translates it into your preferred language, and plays it back in a natural, expressive voice — all with minimal delay. This makes conversations across different languages feel as natural and fluid as speaking face-to-face.
+
+## Key Features
+
+- Real-time Speech-to-Text (STT): Captures and transcribes speech instantly using OpenAI Realtime and ElevenLabs STT.
+- Automatic Translation: Converts transcripts into multiple target languages seamlessly.
+- Natural Voice TTS Streaming: Generates lifelike, low-latency speech using ElevenLabs TTS API.
+- Group Conversations: Broadcasts translated speech and captions to all participants, excluding the speaker, via Socket.IO.
+- Cross-Platform Support: Works on web and mobile
+
+## How It Works
+
+The microphone stream is captured and sent to the backend via WebRTC/WebSockets.
+STT processes the audio via ElevenLabs STT).
+The transcript is translated into the target language(s) using OpenAI.
+The translated text is sent to ElevenLabs TTS streaming, which returns an audio stream in a natural-sounding voice.
+The audio and captions are broadcasted in real time to all connected users.
+This architecture solves the challenge of keeping latency low while chaining together STT → Translation → TTS across multiple users.
+
+## Technologies Used
+- ElevenLabs API (Text-to-Speech, Speech-to-Speech, Custom Voices)
+- OpenAI API: Realtime translation
+- NestJS + Socket.IO: Signaling, audio/text routing
+- Next.js / React / React Native: Cross-platform client applications
+- WebRTC: Real-time audio streaming between peers
+
+## Getting Started
+
+```bash
+# Clone app project
+git clone https://github.com/BlakePro/air-translate-app
+cd air-translate-app
+pnpm i
+pnpm dev
+open https://localhost:3000
+
+# Clone api/socket project
+git clone https://github.com/BlakePro/air-translate-api
+cd air-translate-api
+pnpm i
+pnpm dev
+```
+
+## Demo
+
+Include screenshots, GIFs, or embed your demo video here.
+
+## Future Plans
+
+Reduce latency using socket in TTS
+
+## Acknowledgments
+
+https://www.apple.com/airpods-pro/
+
+## Project Categories
+
+Choose the most relevant categories for your project:
+
+- **text-to-speech** - TTS applications, narration, accessibility
+- **speech-to-text** - Transcription, voice commands, dictation
+- **voices** - Voice cloning, custom voices, voice transformation
