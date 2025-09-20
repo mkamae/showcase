@@ -1,0 +1,11 @@
+name: Thiago Mateo Lopez Alderete
+avatar: "https://github.com/ThiagoLopezA.png" # or any avatar URL
+url: "https://time2build.ai/" # Optional: your website
+bio: "Just somebody who loves to build things."
+location: "Cordoba, Argentina"
+isElevenLabs: false # Set to true if you work at ElevenLabs
+socials:
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/thiagolopezalderete/"
+  - label: GitHub
+    url: "https://github.com/ThiagoLopezA"
