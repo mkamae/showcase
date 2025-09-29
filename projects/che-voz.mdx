@@ -1,0 +1,115 @@
+---
+title: Che Voz - AI Voice Assistant Platform
+description: Real-time voice assistant with multiple Spanish dialects using ElevenLabs conversational AI
+authorIds:
+  - alan-rotta
+categories:
+  - agents
+  - text-to-speech
+  - speech-to-text
+isFeatured: false
+date: "2025-01-29"
+image: /images/che-voz.png
+demoUrl: https://che-voz.vercel.app/
+repoUrl: https://github.com/alnroot/che_voz
+videoUrl: # Optional - add if you have a demo video
+xUrl: # Optional - add if you have a tweet about the project
+---
+
+# Che Voz - AI Voice Assistant Platform
+
+## Overview
+
+Che Voz is an innovative AI voice assistant platform that brings natural Spanish conversations to life with region-specific dialects. Built with ElevenLabs' conversational AI, it offers authentic voice interactions for users across Latin America and Spain, automatically suggesting the most appropriate agent based on the user's location.
+
+## Key Features
+
+- **Multi-Dialect Support**: Five specialized agents covering Argentine (Buenos Aires, Córdoba, Mendoza), Mexican, and Colombian Spanish accents
+- **Location-Based Intelligence**: Automatically detects user location and suggests the most culturally appropriate voice agent
+- **Real-Time Voice Streaming**: Low-latency bidirectional audio using WebSocket technology
+- **Modern Web Interface**: Intuitive dialer interface with visual feedback and agent suggestions
+- **Clean Architecture**: Well-structured FastAPI backend with domain-driven design principles
+
+## How It Works
+
+Che Voz leverages ElevenLabs' Conversational AI API to create natural voice interactions. The system architecture includes:
+
+1. **Frontend**: Modern web dialer that captures audio and handles WebSocket connections
+2. **Backend**: FastAPI server that manages conversations and integrates with ElevenLabs
+3. **Location Service**: Intelligent agent suggestion based on IP geolocation and browser location API
+4. **Voice Processing**: Real-time audio streaming with automatic format conversion (PCM16)
+
+```
+┌─────────────┐     WebSocket      ┌──────────────┐
+│   Browser   │◄──────────────────►│   FastAPI    │
+│   Dialer    │     Audio/JSON     │   Backend    │
+└─────────────┘                    └──────┬───────┘
+                                          │
+                                          │ HTTPS
+                                          ▼
+                                   ┌──────────────┐
+                                   │  ElevenLabs  │
+                                   │ Conversational│
+                                   │      AI       │
+                                   └──────────────┘
+```
+
+## Technologies Used
+
+- **ElevenLabs API**: Conversational AI for natural voice interactions
+- **FastAPI**: High-performance Python web framework
+- **WebSocket**: Real-time bidirectional communication
+- **Docker**: Containerized deployment
+- **Location Detection**: IP-based and browser geolocation APIs
+
+## Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/alnroot/che_voz.git
+cd che_voz
+
+# Set up environment
+echo "ELEVENLABS_API_KEY=your_key_here" > .env
+
+# Run with Docker
+docker-compose up
+
+# Or run locally
+pip install -r requirements.txt
+python main.py
+```
+
+Visit `http://localhost:8000` and try calling:
+- **111**: Argentine Porteño agent
+- **222**: Mexican agent  
+- **333**: Colombian agent
+- **444**: Argentine Cordobés agent
+- **555**: Argentine Mendocino agent
+
+## Demo
+
+Experience Che Voz live at [https://che-voz.vercel.app/](https://che-voz.vercel.app/)
+
+The platform automatically detects your location and suggests the most appropriate Spanish-speaking agent. Users can override the suggestion by dialing specific agent codes or letting the system choose based on their region.
+
+## Future Plans
+
+- **Expanded Dialect Coverage**: Adding agents for Chile, Peru, Venezuela, and Spain
+- **Custom Voice Training**: Allow users to create personalized voice agents
+- **Multi-Language Support**: Extending beyond Spanish to Portuguese and indigenous languages
+- **Enterprise Features**: Call analytics, conversation history, and API access
+- **Mobile SDK**: Native iOS and Android integration
+
+## Team
+
+Che Voz was built by a talented team during the ElevenLabs Hackathon:
+
+- **[Alan Rotta](https://github.com/alnroot)** - Software Engineer & Lead Developer | [LinkedIn](https://linkedin.com/in/alanrotta)
+- **[Maria Emilia Mocayar](https://github.com/memocayar)** - Developer & Tester | [X](https://x.com/https_memi) | [LinkedIn](https://linkedin.com/in/memocayar)
+- **[Marianela Flora](https://github.com/marianelavflora)** - Developer, UX & UI Designer | [X](https://x.com/mavifloraa) | [LinkedIn](https://linkedin.com/in/marianelavflora)
+- **[Franco Montes](https://github.com/FrancoLeoMontes)** - Tester & UX Designer | [X](https://x.com/MontesFranco73) | [LinkedIn](https://www.linkedin.com/in/francomontesing)
+
+## Acknowledgments
+
+Built collaboratively during the ElevenLabs Hackathon, Che Voz showcases the potential of AI to preserve and celebrate linguistic diversity. Special thanks to the ElevenLabs team for their powerful conversational AI platform and to the Latin American community for inspiring authentic regional voice experiences.
