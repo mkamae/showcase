@@ -167,24 +167,6 @@ DEBUG_LOGS=true
 NEXT_PUBLIC_BACKEND_URL=https://your-railway-app.railway.app
 ```
 
-### ElevenLabs Agent Setup
-Configure your agent with dynamic variables in the system prompt:
-```
-You are a time traveler from the year {{era_year}} during the {{time_period}}.
-LANGUAGE: Always respond in {{language_name}}.
-PERSONALITY: Use these expressions naturally: "{{expression_1}}", "{{expression_2}}", "{{expression_3}}"
-```
-
-See [apps/server/AGENT_SETUP.md](https://github.com/dan1dr/time-traveler/blob/main/apps/server/AGENT_SETUP.md) for the complete configuration guide.
-
-## JWT Authentication
-
-The API uses JWT (JSON Web Tokens) for secure authentication. All endpoints require a valid token.
-
-For detailed examples (including cURL snippets), see the backend guide:
-- [apps/server/README.md](https://github.com/dan1dr/time-traveler/blob/main/apps/server/README.md)
-```
-
 ## Future Plans
 
 - Extended agent memory: Persist conversational memory in a database to recall prior calls and tailor responses
