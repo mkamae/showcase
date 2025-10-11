@@ -1,0 +1,117 @@
+---
+title: PixelPanel - Multimodal Comic Generator
+description: Create comics panel-by-panel with AI. Sketch modifications, add voice narration. Built at AI Tinkerers hackathon.
+authorIds:
+  - jamie-ogundiran
+  - natalie-chan
+categories:
+  - text-speech
+isFeatured: true
+date: "2025-10-11"
+image: /images/pixel-panel.png
+demoUrl: https://www.pixelpanel.co/
+videoUrl: https://www.youtube.com/watch?v=eIadT6-nMpk
+---
+
+# PixelPanel
+
+## Overview
+
+PixelPanel is a multimodal comic generator that transforms simple prompts into complete illustrated stories with narration (AI Tinkerers Ultimate Agents hackathon winning project). The project is open source and available on [GitHub](https://github.com/JamieOgun/PixelPanel).
+
+## Key Features
+
+- Panel-by-Panel Creation: Build your comic incrementally with simple text prompts for each panel
+- Iterative Editing: Sketch modifications directly on panels or refine with additional prompts
+- Voice Narration: Add professional voice-over narration using ElevenLabs text-to-speech
+
+## How It Works
+
+### Creating Your Comic
+
+The workflow is simple:
+
+**Start with a prompt**: Describe your first panel. "A superhero overlooking the city at sunset" or "a cozy coffee shop on a rainy morning."
+
+**Generate and refine**: PixelPanel creates the image. If it's not quite right, sketch modifications or add a follow-up prompt like "make the sunset more dramatic."
+
+**Build the story**: Move to the next panel. Each new prompt builds on your narrative, creating visual continuity across panels.
+
+**Add narration**: Once your panels are ready, write the narrative text and generate voice-over. The audio syncs with each panel automatically.
+
+**Export**: Download your comic as individual panels, or export as a video with narration included.
+
+### Real Examples
+
+**Mystery Story**
+- Panel 1: "Detective examining clues in a dimly lit office"
+- Panel 2: "Close-up of a mysterious letter with cryptic symbols"
+- Panel 3: "Detective rushing out into the night"
+- Narration: "Detective Morris knew time was running out..."
+
+**Fantasy Adventure**
+- Panel 1: "Warrior standing at the edge of an enchanted forest"
+- Panel 2: "Magical creatures watching from behind ancient trees"
+- Panel 3: "The warrior discovering a glowing artifact"
+- Narration: "The prophecy had spoken of this moment..."
+
+## Technologies Used
+
+- **ElevenLabs Text-to-Speech**: Professional voice narration generation
+- **Nanobanana**: AI-powered image generation with iterative editing
+
+## Getting Started
+
+### Using the Hosted Platform
+
+The easiest way to get started with PixelPanel is to use our hosted platform:
+
+1. **Visit [pixelpanel.co](https://www.pixelpanel.co/)**
+2. **Sign up** for a free account
+3. **Start creating** your first comic with simple text prompts
+4. **Add voice narration** using ElevenLabs integration
+5. **Export and share** your completed comics
+
+### Local Development
+
+For developers who want to run PixelPanel locally or contribute to the project, detailed setup instructions are available in our [GitHub repository](https://github.com/JamieOgun/PixelPanel/tree/main).
+
+The project includes:
+- **Frontend**: Next.js 15 with TypeScript and Tailwind CSS
+- **Backend**: FastAPI with Python
+- **Database**: Supabase (PostgreSQL)
+- **AI**: Google Gemini 2.5 Flash for image generation
+- **Voice**: ElevenLabs for text-to-speech narration
+
+## Demo
+
+<AspectRatio ratio={16 / 9} className="my-4">
+  <iframe
+    src="https://www.youtube.com/embed/UF81CUqIUnU"
+    title="YouTube video"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+    className="h-full w-full rounded-md"
+  />
+</AspectRatio>
+
+## What's Next?
+
+The next major feature is character voice dialogue. Right now, PixelPanel handles narrator voice-over, but we want to add speech bubbles with actual character voices. Imagine creating a comic where each character has their own distinct voice, generated through ElevenLabs' voice cloning or character presets.
+
+We're also exploring:
+- Collaborative editing where multiple creators work on the same comic
+- Integration with popular comic platforms for direct publishing
+- Advanced panel layouts and transitions
+
+Create comic with just your imagination.
+
+Try it yourself and let us know what you create.
+
+## Acknowledgments
+
+**Team Members:**
+- Jamie Ogundiran
+- Natalie Chan
+- Maks Sekuła
+- David Szalai
