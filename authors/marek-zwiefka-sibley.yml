@@ -1,0 +1,13 @@
+name: Marek Zwiefka-Sibley
+avatar: "https://trulience.com/home/assets/img/mzs.jpeg"
+url: "https://www.trulience.com/"
+bio: "Founder @ Trulience"
+location: "London, UK"
+isElevenLabs: false
+socials:
+  - label: X
+    url: "https://x.com/trulience"
+  - label: GitHub
+    url: "https://github.com/trulience"
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/marekzs/"
