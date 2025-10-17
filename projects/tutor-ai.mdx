@@ -1,0 +1,79 @@
+---
+title: TutorAI
+description: Virtual AI tutor for students 6–18, combining streaming-style learning with ElevenLabs voice tech and real-time visuals.
+authorIds:
+  - thiago-lopez
+  - jose-da-luz
+  - julian-parisi
+categories:
+  - text-to-speech
+  - speech-to-text
+isFeatured: false
+date: "2025-09-20"
+image: /images/tutor-ai.png
+demoUrl: https://www.loom.com/share/ec688f4682a643ef9efe8603ffbeef18?sid=5dd8d208-092f-4f03-9f30-1357e292ce2a 
+repoUrl: https://github.com/ThiagoLopezA/tutor-ai
+linkedinUrl: https://www.linkedin.com/feed/update/urn:li:activity:7374516388717047808/
+---
+
+
+# TutorAI
+
+## Overview
+
+TutorAI is a virtual teacher powered by artificial intelligence, designed for students between 6 and 18 years old. Our mission is to turn homework and learning into an engaging, personalized, and fun experience.
+Why is this important? In Argentina, kids lose on average more than 20 school days per year due to strikes, holidays, and absences — nearly a whole month without academic continuity. On top of that, attention spans are getting shorter in a digital world full of instant entertainment.
+TutorAI solves both problems by blending AI-driven education with the engagement strategies of live streamers, ensuring kids stay focused, curious, and motivated.
+We leverage ElevenLabs technology for real-time Text-to-Speech (TTS) and Speech-to-Text (STT), making learning accessible even for kids who don’t yet know how to read or write.
+
+## Key Features
+
+- Personalized Learning: Lessons adapt to the student’s preferences, style, and level, ensuring a unique path for each child.
+- Streamer-Like Interface: Inspired by live streaming, with avatars and memes (like Edulcito) to keep attention high.
+- Voice Interaction: Powered by ElevenLabs TTS + STT, enabling students to speak naturally and get instant feedback.
+- Customizable Avatars: Kids can create their own characters, keeping the learning process fun and relatable.
+- Real-Time Illustrations: Integration with Nano-Banana for on-demand image generation, helping explain complex ideas visually.
+
+## How It Works
+
+1. Student Interaction: The student either types or speaks (using STT) to TutorAI.
+2. AI Response: The AI processes the input, adapts the explanation to the student’s style, and enriches it with examples.
+3. Engagement Layer: Responses are presented through a streamer-like interface, with avatars, memes, and visuals.
+4. Accessibility: For younger students, ElevenLabs TTS reads responses out loud, making the experience inclusive.
+5. Real-Time Media: When concepts need reinforcement, TutorAI generates images or other media to keep curiosity alive.
+
+## Architecture at a glance
+
+- Frontend: Web app with interactive, game-like UI.
+- Backend: AI-driven engine orchestrating responses, personalization, and integrations.
+- APIs: ElevenLabs (TTS, STT), Nano-Banana (image gen), plus custom AI models.
+
+## Technologies Used
+
+- ElevenLabs API
+- Text-to-Speech (TTS)
+- Speech-to-Text (STT)
+- Nano-Banana (real-time image generation)
+- OpenAI / LLM APIs (for tutoring intelligence)
+- Next.js + React (frontend)
+- Node.js / Express (backend services)
+
+## Getting Started
+
+### 1. Set up environment variables
+
+Copy the example environment file and update it with your own API keys (e.g., ElevenLabs, Nano-Banana, etc.):
+```bash
+cp .env.example .env
+```
+Edit .env with your credentials.
+
+### 2. Run with docker
+```bash
+docker compose up
+```
+
+### 3. Access the app
+
+Open http://localhost:3000
+ in your browser.
