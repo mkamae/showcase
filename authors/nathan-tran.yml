@@ -1,0 +1,13 @@
+name: Nathan Tran
+avatar: "https://github.com/n8thantran.png" # or any avatar URL
+url: "https://www.n8than.me/" # Optional: your website
+bio: "computer science @ san jose state university"
+location: "San Jose, CA"
+isElevenLabs: false # Set to true if you work at ElevenLabs
+socials:
+  - label: X
+    url: "https://x.com/vNvthan"
+  - label: GitHub
+    url: "https://github.com/n8thantran"
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/nthntrn/" # Optional

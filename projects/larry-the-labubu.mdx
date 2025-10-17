@@ -1,0 +1,77 @@
+---
+title: Larry the Labubu
+description: Brief description of what your project does (max 160 chars)
+authorIds:
+  - nathan-tran
+categories:
+  - text-to-speech
+isFeatured: false
+date: "2025-09-20"
+image: /images/larry-the-labubu.png
+---
+
+# Larry the Labubu
+
+## Overview
+
+LarryTheLabubu is an interactive desktop pet that brings the beloved Labubu character to life on your computer screen! This mischievous companion walks around your desktop, plays games, and annoys you with unneccesary comments using ElevenLabs voice technology. 
+
+The pet features Labubu's signature phrases like "labu-labu", sings "labuubuulabuubuu", and says brain rot phrases like "six seven" and "forty-one." It's a perfect blend of cute character design, interactive gameplay, and unseriousness.
+
+## Key Features
+
+- **🎤 AI Voice Integration**: Uses ElevenLabs TTS API to give Labubu a realistic voice with signature phrases
+- **🎮 Interactive Games**: Built-in matcha whisking mini-game and expandable game system
+- **🖥️ Desktop Companion**: Walks around your screen, interacts with your windows, and responds to user actions
+- **🎯 Smart Behaviors**: Escalating mischief levels, game requests, and contextual responses
+- **🎨 Sprite Animation**: Smooth character animations with multiple states and expressions
+- **⚡ Real-time Interaction**: Mouse control, window manipulation, and dynamic behavior system
+
+## How It Works
+
+- **Voice System**: Integrates ElevenLabs API with `.env` configuration for seamless voice generation. The system randomly triggers Labubu's signature phrases every 5-10 seconds.
+- **Game Engine**: Modular game system that allows for easy addition of new mini-games. Currently features a matcha whisking game with increasing difficulty and Labubu's special voice responses.
+- **Desktop Integration**: Uses platform-specific APIs for advanced desktop manipulation including window detection, mouse control, and screen interaction.
+- **Behavior AI**: Sophisticated state machine that tracks user interactions, game results, and time-based escalation to create increasingly mischievous but engaging behaviors.
+
+## Technologies Used
+
+- **ElevenLabs API**: Text-to-Speech (TTS) for realistic voice generation with custom voice settings
+- **PySide6**: Modern Python GUI framework for the desktop pet interface
+- **Pygame**: Audio playback and game engine support
+- **PIL/Pillow**: Image processing and sprite sheet handling
+- **Python-dotenv**: Environment variable management for API keys
+- **Platform APIs**: macOS Cocoa/Quartz, Windows API for desktop integration
+- **Threading**: Asynchronous voice generation and playback
+
+## Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/n8thantran/LarryTheLabubu.git
+cd LarryTheLabubu
+
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Set up your ElevenLabs API key
+cp .env.example .env
+# Edit .env and add your API key from https://elevenlabs.io
+```
+
+# Usage example
+```bash
+# Run the desktop pet
+source venv/bin/activate
+python desktop_pet.py
+```
+
+## Acknowledgements
+Made by
+-Nathan Tran: https://github.com/n8thantran
+-Alvin Tran: https://github.com/altran03
+-Scott Bihag: https://github.com/Sbcoit
