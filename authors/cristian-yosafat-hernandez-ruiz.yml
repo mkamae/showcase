@@ -1,0 +1,13 @@
+name: "Cristian Yosafat Hernandez Ruiz"
+avatar: "https://avatars.githubusercontent.com/u/1862793?v=4" # or any avatar URL
+url: "https://github.com/BlakePro" # Optional: your website
+bio: "I’m a full-stack developer and founder of yafacture.com, with a focus on building scalable, real-time applications. My core stack includes TypeScript, React/Next.js, React Native, and NestJS, supported by databases like MongoDB, Redis, and PostgreSQL."
+location: "Mexico, Mexico city"
+isElevenLabs: false # Set to true if you work at ElevenLabs
+socials:
+  - label: X
+    url: "https://x.com/TalkToDocs"
+  - label: GitHub
+    url: "https://github.com/BlakePro"
+  - label: LinkedIn
+    url: "" # Optional
