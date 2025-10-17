@@ -1,0 +1,13 @@
+name: Alan Rotta
+avatar: "https://github.com/alnroot.png"
+url: "" # No personal website provided
+bio: "Software engineer playing with gen AI, passionate about neuroscience"
+location: "Córdoba, Argentina"
+isElevenLabs: false
+socials:
+  - label: X
+    url: "https://x.com/dimencroot"
+  - label: GitHub
+    url: "https://github.com/alnroot"
+  - label: LinkedIn
+    url: "https://linkedin.com/in/alanrotta"
