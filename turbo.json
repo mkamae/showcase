@@ -4,6 +4,7 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", "../../authors/**", "../../projects/**"],
       "env": [
         "NEXT_PUBLIC_APP_URL",
         "UPSTASH_REDIS_REST_URL",
