@@ -1,0 +1,13 @@
+name: Mwangi Kamae
+avatar: "https://github.com/mkamae.png" # or any avatar URL
+url: "https://calmai254.xyz/" # Optional: your website
+bio: "Full stack engineer passsionate about solving problems"
+location: "Nairobi, Kenya"
+isElevenLabs: false # Set to true if you work at ElevenLabs
+socials:
+  - label: X
+    url: "https://x.com/RizikiRafiki/"
+  - label: GitHub
+    url: "https://github.com/mkamae"
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/mkamae" # Optional
