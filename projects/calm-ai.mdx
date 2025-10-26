@@ -1,0 +1,98 @@
+---
+title: Calm Ai
+description: Brief description of what your project does (max 160 chars)
+Your AI companion for emotional wellness
+
+Experience personalized emotional support through AI-powered conversations. CalmAI is designed to listen, understand, and help you navigate your feelings in a safe, supportive environment.
+authorIds:
+  - Mwangi Kamae# Must match your author file name (without .yml)
+categories:
+  - agents # Choose from: agents, text-to-speech, speech-to-text, music, voices
+isFeatured: false # Leave as false, we'll feature exceptional projects
+date: "2025-10-26" # Today's date in YYYY-MM-DD format
+image: /images/your-project.png # Upload image to /public/images/
+demoUrl: https://calmai254.xyz/ # Optional: Live demo
+repoUrl: https://github.com/mkamae/calm-ai # Optional: Repository
+videoUrl: https://www.youtube.com/watch?v=Vxj69V3WHxQ # Optional: Demo video
+xUrl: https://x.com/you/status/... # Optional: X/Twitter post
+---
+
+# Calm Ai 
+
+## Overview
+
+Your AI companion for emotional wellness
+
+Experience personalized emotional support through AI-powered conversations. CalmAI is designed to listen, understand, and help you navigate your feelings in a safe, supportive environment.I used the text to speech.Africa has low levels of therapists this intervention seeks to aid with that.
+
+## Key Features
+
+- Feature 1: Voice guided breathing exercises
+- Feature 2: Ai Therapist
+- Feature 3: Voice to text
+
+## How It Works
+
+Frontend (React/TypeScript)
+    ↓
+React Query (State Management)
+    ↓
+Supabase Edge Functions (Serverless Backend)
+    ↓
+External AI/Audio APIs # 🎯 Key Challenges Solved - Summary
+
+## **1. Stack Overflow in Audio Conversion**
+**Problem**: Large audio buffers caused stack overflow when converting to base64  
+**Solution**: Chunked processing in 32KB increments instead of converting entire buffer at once
+
+## **2. API Reliability & Availability**
+**Problem**: Single point of failure if AI service goes down  
+**Solution**: Cascading fallback system (OpenAI → Together AI → graceful error message)
+
+## **3. Cross-Browser Audio Compatibility**
+**Problem**: Different browsers support different audio formats and constraints  
+**Solution**: Progressive negotiation - tries multiple MIME types (webm/opus → webm → mp4 → wav) and audio constraints
+
+## **4. Text-to-Speech Availability**
+**Problem**: ElevenLabs API requires paid key, limiting accessibility  
+**Solution**: Fallback to browser's native Web Speech API when cloud TTS unavailable
+
+5. Initial Load Performance
+Problem: Large bundle size impacts first paint  
+Solution: Code splitting with React.lazy() + Error Boundaries for graceful degradation
+
+ 6. Complex Breathing Exercise State
+Problem: Managing multi-phase breathing patterns with voice guidance  
+Solution: State machine with interval-based phase transitions, voice integration, and automatic cleanup
+
+7. Accessibility for Mental Health Users
+Problem: Must be usable by people in distress, including those with disabilities  
+Solution: WCAG-compliant implementation with ARIA labels, keyboard navigation, screen reader support
+
+8. User Experience During Failures**
+Problem: Technical errors can worsen emotional distress  
+Solution: Compassionate fallback messages that maintain therapeutic tone even during errors
+
+9. Microphone Permission Errors**
+Problem: Generic error messages confuse users  
+Solution: Specific, actionable error messages based on error type (NotFoundError, NotAllowedError, etc.)
+
+---
+
+Core Philosophy: Graceful degradation and user empathy throughout - ensuring the app remains helpful even when external services fail.
+
+## Technologies Used
+
+- ElevenLabs API (specify which features: TTS, STS, Voice Cloning, etc.)
+- Other key technologies
+- Frameworks and libraries
+
+## Getting Started
+
+```bash
+# Installation instructions
+npm install your-project
+
+# Usage example
+import { YourProject } from 'your-project'
+```
